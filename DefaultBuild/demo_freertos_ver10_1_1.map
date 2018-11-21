@@ -1,0 +1,120 @@
+Renesas Optimizing Linker (W2.08.00 )             21-Nov-2018 15:00:31
+
+*** Options ***
+
+-subcommand=DefaultBuild\demo_freertos_ver10_1_1.clnk
+-library=DefaultBuild\demo_freertos_ver10_1_1.lib
+-input=DefaultBuild\main.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_PORT_user.obj
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_smc_cgc.obj
+-input=DefaultBuild\r_smc_cgc_user.obj
+-input=DefaultBuild\r_smc_interrupt.obj
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\hwsetup.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\lowsrc.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\r_bsp_common.obj
+-input=DefaultBuild\cpu.obj
+-input=DefaultBuild\locking.obj
+-input=DefaultBuild\mcu_clocks.obj
+-input=DefaultBuild\mcu_init.obj
+-input=DefaultBuild\mcu_interrupts.obj
+-input=DefaultBuild\mcu_locks.obj
+-input=DefaultBuild\mcu_mapped_interrupts.obj
+-input=DefaultBuild\mcu_startup.obj
+-input=DefaultBuild\Pin.obj
+-input=DefaultBuild\ApplicationHook.obj
+-input=DefaultBuild\croutine.obj
+-input=DefaultBuild\event_groups.obj
+-input=DefaultBuild\list.obj
+-input=DefaultBuild\queue.obj
+-input=DefaultBuild\stream_buffer.obj
+-input=DefaultBuild\tasks.obj
+-input=DefaultBuild\timers.obj
+-input=DefaultBuild\heap_1.obj
+-input=DefaultBuild\port.obj
+-input=DefaultBuild\port_asm.obj
+-noprelink
+-output=DefaultBuild\demo_freertos_ver10_1_1.abs
+-vect=_undefined_interrupt_source_isr
+-list=DefaultBuild\demo_freertos_ver10_1_1.map
+-nooptimize
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/4,C_1,C_2,C,C$*,D*,W*,L,P*/FFE00000,EXCEPTVECT/FFFFFF80,RESETVECT/FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000c82b      b428   1
+R_1
+                                  0000c82c  0000c87b        50   1
+B_2
+                                  0000c87c  0000c883         8   2
+R_2
+                                  0000c884  0000c884         0   1
+B
+                                  0000c884  0000d13f       8bc   4
+R
+                                  0000d140  0000d283       144   4
+$ADDR_C_FE7F5D00
+                                  fe7f5d00  fe7f5d0b         c   1
+$ADDR_C_FE7F5D10
+                                  fe7f5d10  fe7f5d13         4   1
+$ADDR_C_FE7F5D20
+                                  fe7f5d20  fe7f5d23         4   1
+$ADDR_C_FE7F5D40
+                                  fe7f5d40  fe7f5d43         4   1
+$ADDR_C_FE7F5D48
+                                  fe7f5d48  fe7f5d4b         4   1
+$ADDR_C_FE7F5D50
+                                  fe7f5d50  fe7f5d5f        10   1
+$ADDR_C_FE7F5D64
+                                  fe7f5d64  fe7f5d67         4   1
+$ADDR_C_FE7F5D70
+                                  fe7f5d70  fe7f5d73         4   1
+C_1
+                                  ffe00000  ffe00000         0   1
+C_2
+                                  ffe00000  ffe00005         6   2
+C
+                                  ffe00008  ffe0007f        78   4
+C$DSEC
+                                  ffe00080  ffe000a3        24   4
+C$BSEC
+                                  ffe000a4  ffe000bb        18   4
+C$VECT
+                                  ffe000bc  ffe004bb       400   4
+D
+                                  ffe004bc  ffe005ff       144   4
+D_1
+                                  ffe00600  ffe0064f        50   1
+D_2
+                                  ffe00650  ffe00650         0   1
+W
+                                  ffe00650  ffe00650         0   1
+W_1
+                                  ffe00650  ffe00650         0   1
+W_2
+                                  ffe00650  ffe00650         0   1
+L
+                                  ffe00650  ffe006b3        64   4
+P
+                                  ffe006b4  ffe04b92      44df   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4

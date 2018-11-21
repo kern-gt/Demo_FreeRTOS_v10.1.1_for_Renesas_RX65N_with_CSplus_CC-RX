@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="CubeSuite+" Version="V7.00.00  [13 Jun 2018]" />
+  <Placeholders>
+    <PlaceholderPrefix>%</PlaceholderPrefix>
+    <PlaceholderPostfix>%</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="demo_freertos_ver10_1_1" Type="Application">
+    <Files>
+      <Category Name="Smart Configurator">
+        <Category Name="Config_PORT">
+          <Path>src\smc_gen\Config_PORT\Config_PORT.c</Path>
+          <Path>src\smc_gen\Config_PORT\Config_PORT.h</Path>
+          <Path>src\smc_gen\Config_PORT\Config_PORT_user.c</Path>
+        </Category>
+        <Category Name="general">
+          <Path>src\smc_gen\general\r_cg_hardware_setup.c</Path>
+          <Path>src\smc_gen\general\r_cg_macrodriver.h</Path>
+          <Path>src\smc_gen\general\r_cg_port.h</Path>
+          <Path>src\smc_gen\general\r_cg_userdefine.h</Path>
+          <Path>src\smc_gen\general\r_smc_cgc.c</Path>
+          <Path>src\smc_gen\general\r_smc_cgc.h</Path>
+          <Path>src\smc_gen\general\r_smc_cgc_user.c</Path>
+          <Path>src\smc_gen\general\r_smc_entry.h</Path>
+          <Path>src\smc_gen\general\r_smc_interrupt.c</Path>
+          <Path>src\smc_gen\general\r_smc_interrupt.h</Path>
+        </Category>
+        <Category Name="r_bsp">
+          <Path>src\smc_gen\r_bsp\platform.h</Path>
+          <Path>src\smc_gen\r_bsp\readme.txt</Path>
+          <Category Name="board">
+            <Category Name="generic_rx65n">
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\dbsct.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\hwsetup.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\hwsetup.h</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\lowlvl.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\lowsrc.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\lowsrc.h</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\resetprg.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\r_bsp.h</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\r_bsp_config_reference.h</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\r_bsp_interrupt_config_reference.h</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\sbrk.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\vecttbl.c</Path>
+              <Path>src\smc_gen\r_bsp\board\generic_rx65n\vecttbl.h</Path>
+            </Category>
+            <Category Name="user">
+              <Path>src\smc_gen\r_bsp\board\user\r_bsp.h</Path>
+            </Category>
+          </Category>
+          <Category Name="doc">
+            <Category Name="en">
+              <Path>src\smc_gen\r_bsp\doc\en\r01an1685ej0380-rx.pdf</Path>
+            </Category>
+            <Category Name="ja">
+              <Path>src\smc_gen\r_bsp\doc\ja\r01an1685jj0380-rx.pdf</Path>
+            </Category>
+          </Category>
+          <Category Name="mcu">
+            <Category Name="all">
+              <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_common.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_common.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\all\r_typedefs.h</Path>
+            </Category>
+            <Category Name="rx65n">
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\cpu.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\cpu.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\locking.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\locking.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_clocks.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_info.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_init.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_init.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_interrupts.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_interrupts.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_locks.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_locks.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_mapped_interrupts.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_mapped_interrupts.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_mapped_interrupts_private.h</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_startup.c</Path>
+              <Path>src\smc_gen\r_bsp\mcu\rx65n\mcu_startup.h</Path>
+              <Category Name="register_access">
+                <Path>src\smc_gen\r_bsp\mcu\rx65n\register_access\iodefine.h</Path>
+              </Category>
+            </Category>
+          </Category>
+        </Category>
+        <Category Name="r_config">
+          <Path>src\smc_gen\r_config\r_bsp_config.h</Path>
+          <Path>src\smc_gen\r_config\r_bsp_config_readme.txt</Path>
+          <Path>src\smc_gen\r_config\r_bsp_interrupt_config.h</Path>
+        </Category>
+        <Category Name="r_pincfg">
+          <Path>src\smc_gen\r_pincfg\Pin.c</Path>
+          <Path>src\smc_gen\r_pincfg\Pin.h</Path>
+        </Category>
+      </Category>
+      <Category Name="FreeRTOS">
+        <Category Name="portable">
+          <Path>FreeRTOS\portable\heap_1.c</Path>
+          <Path>FreeRTOS\portable\port.c</Path>
+          <Path>FreeRTOS\portable\portmacro.h</Path>
+          <Path>FreeRTOS\portable\port_asm.src</Path>
+        </Category>
+        <Path>FreeRTOS\croutine.c</Path>
+        <Path>FreeRTOS\croutine.h</Path>
+        <Path>FreeRTOS\deprecated_definitions.h</Path>
+        <Path>FreeRTOS\event_groups.c</Path>
+        <Path>FreeRTOS\event_groups.h</Path>
+        <Path>FreeRTOS\FreeRTOS.h</Path>
+        <Path>FreeRTOS\list.c</Path>
+        <Path>FreeRTOS\list.h</Path>
+        <Path>FreeRTOS\message_buffer.h</Path>
+        <Path>FreeRTOS\mpu_prototypes.h</Path>
+        <Path>FreeRTOS\mpu_wrappers.h</Path>
+        <Path>FreeRTOS\portable.h</Path>
+        <Path>FreeRTOS\projdefs.h</Path>
+        <Path>FreeRTOS\queue.c</Path>
+        <Path>FreeRTOS\queue.h</Path>
+        <Path>FreeRTOS\semphr.h</Path>
+        <Path>FreeRTOS\StackMacros.h</Path>
+        <Path>FreeRTOS\stack_macros.h</Path>
+        <Path>FreeRTOS\stream_buffer.c</Path>
+        <Path>FreeRTOS\stream_buffer.h</Path>
+        <Path>FreeRTOS\task.h</Path>
+        <Path>FreeRTOS\tasks.c</Path>
+        <Path>FreeRTOS\timers.c</Path>
+        <Path>FreeRTOS\timers.h</Path>
+        <Path>FreeRTOS\FreeRTOSConfig.h</Path>
+      </Category>
+      <Path>ApplicationHook.c</Path>
+      <Path>main.c</Path>
+      <Path>プロジェクト流用情報.txt</Path>
+    </Files>
+    <DebugOptions>
+      <ConnectSettings>
+        <MainClock>214748364000</MainClock>
+      </ConnectSettings>
+      <DebugToolSettings />
+    </DebugOptions>
+    <Device Series="RX">R5F565NEDxFP</Device>
+    <BuildOptions Name="CC-RX" Version="V2.08.00">
+      <BuildMode Name="DefaultBuild" Active="True">
+        <GeneralOptions>
+          <SimultaneouslyBuild>false</SimultaneouslyBuild>
+        </GeneralOptions>
+        <CompileOptions>
+          <Option>-isa=rxv2</Option>
+          <Option>-fpu</Option>
+          <Option>-lang=c99</Option>
+          <Option>-include=src\smc_gen\r_bsp\board\user</Option>
+          <Option>-include=FreeRTOS</Option>
+          <Option>-include=FreeRTOS\portable</Option>
+          <Option>-include=src\smc_gen\r_pincfg</Option>
+          <Option>-include=src\smc_gen\r_config</Option>
+          <Option>-include=src\smc_gen\r_bsp\mcu\rx65n\register_access</Option>
+          <Option>-include=src\smc_gen\r_bsp\mcu\rx65n</Option>
+          <Option>-include=src\smc_gen\r_bsp\mcu\all</Option>
+          <Option>-include=src\smc_gen\r_bsp\board\generic_rx65n</Option>
+          <Option>-include=src\smc_gen\r_bsp</Option>
+          <Option>-include=src\smc_gen\general</Option>
+          <Option>-include=src\smc_gen\Config_PORT</Option>
+          <Option>-utf8</Option>
+          <Option>-output=obj=%BuildModeName%\%FileLeaf%.obj</Option>
+          <Option>-debug</Option>
+          <Option>-outcode=utf8</Option>
+          <Option>-nologo</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-isa=rxv2</Option>
+          <Option>-fpu</Option>
+          <Option>-utf8</Option>
+          <Option>-output=%BuildModeName%\%FileLeaf%.obj</Option>
+          <Option>-debug</Option>
+          <Option>-nologo</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-output=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-vect=_undefined_interrupt_source_isr</Option>
+          <Option>-list=%BuildModeName%\%ProjectName%.map</Option>
+          <Option>-nooptimize</Option>
+          <Option>-start=SU,SI,B_1,R_1,B_2,R_2,B,R/4,C_1,C_2,C,C$*,D*,W*,L,P*/FFE00000,EXCEPTVECT/FFFFFF80,RESETVECT/FFFFFFFC</Option>
+          <Option>-rom=D=R,D_1=R_1,D_2=R_2</Option>
+          <Option>-nologo</Option>
+          <Option>-end</Option>
+          <Option>-input=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.mot</Option>
+          <Option>-form=stype</Option>
+          <Option>-exit</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <Option>-isa=rxv2</Option>
+          <Option>-fpu</Option>
+          <Option>-lang=c99</Option>
+          <Option>-head=runtime,stdio,stdlib,string,new</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.lib</Option>
+          <Option>-nologo</Option>
+          <GenerateMode>BuildOptionChanged</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>DefaultBuild\main.obj</Path>
+          <Path>DefaultBuild\Config_PORT.obj</Path>
+          <Path>DefaultBuild\Config_PORT_user.obj</Path>
+          <Path>DefaultBuild\r_cg_hardware_setup.obj</Path>
+          <Path>DefaultBuild\r_smc_cgc.obj</Path>
+          <Path>DefaultBuild\r_smc_cgc_user.obj</Path>
+          <Path>DefaultBuild\r_smc_interrupt.obj</Path>
+          <Path>DefaultBuild\dbsct.obj</Path>
+          <Path>DefaultBuild\hwsetup.obj</Path>
+          <Path>DefaultBuild\lowlvl.obj</Path>
+          <Path>DefaultBuild\lowsrc.obj</Path>
+          <Path>DefaultBuild\resetprg.obj</Path>
+          <Path>DefaultBuild\sbrk.obj</Path>
+          <Path>DefaultBuild\vecttbl.obj</Path>
+          <Path>DefaultBuild\r_bsp_common.obj</Path>
+          <Path>DefaultBuild\cpu.obj</Path>
+          <Path>DefaultBuild\locking.obj</Path>
+          <Path>DefaultBuild\mcu_clocks.obj</Path>
+          <Path>DefaultBuild\mcu_init.obj</Path>
+          <Path>DefaultBuild\mcu_interrupts.obj</Path>
+          <Path>DefaultBuild\mcu_locks.obj</Path>
+          <Path>DefaultBuild\mcu_mapped_interrupts.obj</Path>
+          <Path>DefaultBuild\mcu_startup.obj</Path>
+          <Path>DefaultBuild\Pin.obj</Path>
+          <Path>DefaultBuild\ApplicationHook.obj</Path>
+          <Path>DefaultBuild\croutine.obj</Path>
+          <Path>DefaultBuild\event_groups.obj</Path>
+          <Path>DefaultBuild\list.obj</Path>
+          <Path>DefaultBuild\queue.obj</Path>
+          <Path>DefaultBuild\stream_buffer.obj</Path>
+          <Path>DefaultBuild\tasks.obj</Path>
+          <Path>DefaultBuild\timers.obj</Path>
+          <Path>DefaultBuild\heap_1.obj</Path>
+          <Path>DefaultBuild\port.obj</Path>
+          <Path>DefaultBuild\port_asm.obj</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>src\smc_gen\r_bsp\board\user</IncludePathForC>
+          <IncludePathForC>FreeRTOS</IncludePathForC>
+          <IncludePathForC>FreeRTOS\portable</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_pincfg</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_config</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_bsp\mcu\rx65n\register_access</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_bsp\mcu\rx65n</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_bsp\mcu\all</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_bsp\board\generic_rx65n</IncludePathForC>
+          <IncludePathForC>src\smc_gen\r_bsp</IncludePathForC>
+          <IncludePathForC>src\smc_gen\general</IncludePathForC>
+          <IncludePathForC>src\smc_gen\Config_PORT</IncludePathForC>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+    <Extension_SmcCodePart>
+      <CodeGeneratorData></CodeGeneratorData>
+      <GenerateFileFolder>C:\Users\Shun\SkyDrive\workspasce\rx65n\demo_freertos_ver10_1_1</GenerateFileFolder>
+      <SCFGFile>demo_freertos_ver10_1_1.scfg</SCFGFile>
+      <SmcExePath>C:\Program Files (x86)\Renesas Electronics\SmartConfigurator\RX\eclipse\SmartConfigurator.exe</SmcExePath>
+      <CodeGeneratorFilesGuid>5bc51b36-c0b8-4c12-96a2-67fcedacc502</CodeGeneratorFilesGuid>
+    </Extension_SmcCodePart>
+  </Project>
+</MicomToolCommonProjectFile>
